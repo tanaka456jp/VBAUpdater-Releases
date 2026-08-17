@@ -1,8 +1,8 @@
 {
   "schemaVersion": 2,
-  "version": "4.18.2",
+  "version": "4.18.3",
   "channel": "stable",
-  "downloadUrl": "https://raw.githubusercontent.com/tanaka456jp/VBAUpdater-Releases/main/releases/VBAUpdater_Update_4.18.2.zip",
-  "sha256": "33607FF287591A67F84E1A543E1BF29A359EEC1DC4924411D27992071FD81A50",
-  "releaseNotes": "バージョン表示を一元化し、画面内の表示を4.18.2へ統一します。"
+  "downloadUrl": "https://raw.githubusercontent.com/tanaka456jp/VBAUpdater-Releases/main/releases/VBAUpdater_Update_4.18.3.zip",
+  "sha256": "0A6F2EF01F4EFAC11BA54EC6971DC6F73EA19ED434F1C011AC5C9122AA04A31B",
+  "releaseNotes": "更新配布物を不変URL運用へ切り替え、バージョン表示を単一変数に統一した最終確認版です。"
 }
