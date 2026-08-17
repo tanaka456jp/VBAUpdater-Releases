@@ -1,0 +1,8 @@
+{
+  "schemaVersion": 2,
+  "version": "4.18.1",
+  "channel": "stable",
+  "downloadUrl": "https://raw.githubusercontent.com/tanaka456jp/VBAUpdater-Releases/main/releases/VBAUpdater_Update_4.18.1.zip",
+  "sha256": "54401938072706E98D490F27CE200A3C9A74C4554E1AC99B47F240534F4253BD",
+  "releaseNotes": "正式更新配布の初回実証版。ユーザーデータを保持したままVBAUpdater本体を4.18.1へ更新します。"
+}
