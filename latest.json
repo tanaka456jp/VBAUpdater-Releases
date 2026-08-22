@@ -1,8 +1,8 @@
 {
   "schemaVersion": 2,
-  "version": "4.18.4",
+  "version": "4.18.5",
   "channel": "stable",
-  "downloadUrl": "https://raw.githubusercontent.com/tanaka456jp/VBAUpdater-Releases/main/releases/VBAUpdater_Update_4.18.4.zip",
-  "sha256": "1E309DD548B14B05AB549D772B99290B0255A03D817BC88E51CD8D467ABB8AA8",
-  "releaseNotes": "GitのwarningをGUI操作エラーと誤判定する問題を修正し、GitHub Commit/Pushの実機確認を完了したHotFixです。"
+  "downloadUrl": "https://raw.githubusercontent.com/tanaka456jp/VBAUpdater-Releases/main/releases/VBAUpdater_Update_4.18.5.zip",
+  "sha256": "F1DA86E82F5838E37169725FF1E87A0077C445DCC7ABF9440BAD6B990B6C8B68",
+  "releaseNotes": "UserForm正式対応、COM自己回復、タスクバー通知、VBA文字コード事前診断、UTF-8 BOM、複数コンポーネント更新時SAFE2001、Self Update E2E等を改善したV4.18.5正式版です。"
 }
