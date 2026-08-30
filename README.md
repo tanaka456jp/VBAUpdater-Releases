@@ -1,9 +1,9 @@
 # VBAUpdater Releases
 
-Latest: 4.18.6
+Latest: 4.18.7
 
 - manifest: `latest.json`
-- package: `releases/VBAUpdater_Update_4.18.6.zip`
-- SHA-256: `4CF209165A641509D701BA6D769465C18EC1DC0F0282DB29283DF3763F074CFA`
+- package: `releases/VBAUpdater_Update_4.18.7.zip`
+- SHA-256: `7308CF0E853758A92F39438AD515EF828F00483E8CD25D77380D6116B86EE5B3`
 
 Release artifacts are immutable. Published version files are never overwritten.
