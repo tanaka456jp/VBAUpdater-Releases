@@ -1,8 +1,8 @@
 {
   "schemaVersion": 2,
-  "version": "4.18.5",
+  "version": "4.18.6",
   "channel": "stable",
-  "downloadUrl": "https://raw.githubusercontent.com/tanaka456jp/VBAUpdater-Releases/main/releases/VBAUpdater_Update_4.18.5.zip",
-  "sha256": "F1DA86E82F5838E37169725FF1E87A0077C445DCC7ABF9440BAD6B990B6C8B68",
-  "releaseNotes": "UserForm正式対応、COM自己回復、タスクバー通知、VBA文字コード事前診断、UTF-8 BOM、複数コンポーネント更新時SAFE2001、Self Update E2E等を改善したV4.18.5正式版です。"
+  "downloadUrl": "https://raw.githubusercontent.com/tanaka456jp/VBAUpdater-Releases/main/releases/VBAUpdater_Update_4.18.6.zip",
+  "sha256": "4CF209165A641509D701BA6D769465C18EC1DC0F0282DB29283DF3763F074CFA",
+  "releaseNotes": "V4.18.6 HotFix: JSON CLI warning isolation and three-project GUI enumeration fix. PowerShell 5.1 JSON array merging fix for Get-ProjectNames; nested GeneratedDifferenceProvenance import warning suppression."
 }
