@@ -2,7 +2,10 @@
   "schemaVersion": 2,
   "version": "4.18.7",
   "channel": "stable",
-  "downloadUrl": "https://raw.githubusercontent.com/tanaka456jp/VBAUpdater-Releases/main/releases/VBAUpdater_Update_4.18.7.zip",
   "sha256": "7308CF0E853758A92F39438AD515EF828F00483E8CD25D77380D6116B86EE5B3",
-  "releaseNotes": "V4.18.7 corrective release: unified GUI launcher runtime and restored left navigation; Windows PowerShell 5.1 runtime module loading; installer and update Payload user-data exclusion."
+  "releaseNotes": "V4.18.7 corrective release: unified GUI launcher runtime and restored left navigation; Windows PowerShell 5.1 runtime module loading; installer and update Payload user-data exclusion.",
+  "distributionMode": "github-release",
+  "releaseTag": "v4.18.7",
+  "downloadUrl": "https://github.com/tanaka456jp/VBAUpdater-Releases/releases/download/v4.18.7/VBAUpdater_Update_4.18.7.zip",
+  "customerReady": false
 }
