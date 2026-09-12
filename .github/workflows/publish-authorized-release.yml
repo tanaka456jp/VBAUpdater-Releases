@@ -33,7 +33,7 @@ jobs:
         shell: bash
         run: |
           python - <<'PY'
-          import hashlib, json, pathlib, sys
+          import hashlib, json, pathlib
           plan = json.loads(pathlib.Path('migration/release-plan-v4.18.7.json').read_text(encoding='utf-8'))
           auth = json.loads(pathlib.Path('migration/release-authorization-v4.18.7.json').read_text(encoding='utf-8'))
           required = [
@@ -88,11 +88,7 @@ jobs:
           if gh release view "$TAG" --repo "$GITHUB_REPOSITORY" >/dev/null 2>&1; then
             echo "Release $TAG already exists; entering reconciliation mode."
           else
-            gh release create "$TAG" "$ASSET_PATH" "$SHA_FILE" \
-              --repo "$GITHUB_REPOSITORY" \
-              --title "$TITLE" \
-              --notes-file /tmp/release-notes.md \
-              --target "$GITHUB_SHA"
+            gh release create "$TAG" "$ASSET_PATH" "$SHA_FILE" --repo "$GITHUB_REPOSITORY" --title "$TITLE" --notes-file /tmp/release-notes.md --target "$GITHUB_SHA"
           fi
 
           rm -rf /tmp/vbaupdater-release-verify
@@ -122,20 +118,23 @@ jobs:
           latest['downloadUrl'] = f"https://github.com/tanaka456jp/VBAUpdater-Releases/releases/download/{plan['tag']}/{plan['asset']['fileName']}"
           latest['customerReady'] = bool(plan.get('customerReady'))
           pathlib.Path('latest.json').write_text(json.dumps(latest, ensure_ascii=False, indent=2) + '\n', encoding='utf-8')
-          readme = f"""# VBAUpdater Releases
-
-Latest: {latest['version']}
-
-- distribution: GitHub Releases
-- tag: `{plan['tag']}`
-- self-update package: `{plan['asset']['fileName']}`
-- SHA-256: `{plan['asset']['sha256']}`
-- manifest: `latest.json`
-- customer-ready fresh installer: {'yes' if plan.get('customerReady') else 'not yet; required before first external customer distribution'}
-
-GitHub Release assets are the canonical binary distribution channel. `latest.json` is the mutable pointer used by the VBAUpdater self-update client.
-"""
-          pathlib.Path('README.md').write_text(readme, encoding='utf-8')
+          readiness = 'yes' if plan.get('customerReady') else 'not yet; required before first external customer distribution'
+          lines = [
+              '# VBAUpdater Releases',
+              '',
+              f"Latest: {latest['version']}",
+              '',
+              '- distribution: GitHub Releases',
+              f"- tag: `{plan['tag']}`",
+              f"- self-update package: `{plan['asset']['fileName']}`",
+              f"- SHA-256: `{plan['asset']['sha256']}`",
+              '- manifest: `latest.json`',
+              f'- customer-ready fresh installer: {readiness}',
+              '',
+              'GitHub Release assets are the canonical binary distribution channel. `latest.json` is the mutable pointer used by the VBAUpdater self-update client.',
+              '',
+          ]
+          pathlib.Path('README.md').write_text('\n'.join(lines), encoding='utf-8')
           PY
 
           git config user.name 'github-actions[bot]'
