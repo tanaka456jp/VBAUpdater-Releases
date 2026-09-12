@@ -7,5 +7,5 @@
   "distributionMode": "github-release",
   "releaseTag": "v4.18.7",
   "downloadUrl": "https://github.com/tanaka456jp/VBAUpdater-Releases/releases/download/v4.18.7/VBAUpdater_Update_4.18.7.zip",
-  "customerReady": false
+  "customerReady": true
 }
