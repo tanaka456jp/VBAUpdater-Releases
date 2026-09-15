@@ -1,0 +1,10 @@
+{
+  "schemaVersion": 1,
+  "product": "souzoku-simulator",
+  "version": "1.3.0",
+  "channel": "stable",
+  "sha256": "",
+  "releaseNotes": "セルフアップデート基盤を追加。ヘッダーの更新プログラムボタン、起動時の更新通知、SHA-256検証、更新前バックアップ、入力条件の自動復元に対応しました。",
+  "downloadUrl": "",
+  "customerReady": false
+}
