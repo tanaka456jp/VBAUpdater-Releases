@@ -1,11 +1,11 @@
 {
   "schemaVersion": 2,
-  "version": "4.18.7",
+  "version": "4.18.8",
   "channel": "stable",
-  "sha256": "7308CF0E853758A92F39438AD515EF828F00483E8CD25D77380D6116B86EE5B3",
-  "releaseNotes": "V4.18.7 corrective release: unified GUI launcher runtime and restored left navigation; Windows PowerShell 5.1 runtime module loading; installer and update Payload user-data exclusion.",
+  "sha256": "3D58408BD1E361DBE77D966E05C308562794659B28D3273A6CE40940C9CDF42D",
+  "releaseNotes": "V4.18.8 HotFix: safely relink complete Git-synced existing projects on another PC; validated installer and self-update packaging.",
   "distributionMode": "github-release",
-  "releaseTag": "v4.18.7",
-  "downloadUrl": "https://github.com/tanaka456jp/VBAUpdater-Releases/releases/download/v4.18.7/VBAUpdater_Update_4.18.7.zip",
+  "releaseTag": "v4.18.8",
+  "downloadUrl": "https://github.com/tanaka456jp/VBAUpdater-Releases/releases/download/v4.18.8/VBAUpdater_Update_4.18.8.zip",
   "customerReady": true
 }

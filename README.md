@@ -2,14 +2,14 @@
 
 Public distribution repository for VBAUpdater.
 
-Latest: 4.18.7
+Latest: 4.18.8
 
 - canonical binary distribution: **GitHub Releases**
-- current stable tag: `v4.18.7`
+- current stable tag: `v4.18.8`
 - self-update manifest: `latest.json`
-- self-update package: `VBAUpdater_Update_4.18.7.zip`
-- SHA-256: `7308CF0E853758A92F39438AD515EF828F00483E8CD25D77380D6116B86EE5B3`
-- customer-ready fresh installer: not yet; required before first external customer distribution
+- self-update package: `VBAUpdater_Update_4.18.8.zip`
+- SHA-256: `3D58408BD1E361DBE77D966E05C308562794659B28D3273A6CE40940C9CDF42D`
+- customer-ready fresh installer: `VBAUpdater_Setup_4.18.8.exe`
 
 ## Repository role
 
